@@ -1,0 +1,203 @@
+h2 {
+    font-size: 2rem;
+}
+
+h3 {
+    font-size: 1.6rem;
+}
+
+h4 {
+    font-size: 1.3rem;
+}
+
+img {
+    width: 100%;
+    display: block;
+    object-fit: cover;
+}
+
+.about-achievements {
+    margin-top: 6rem;
+}
+
+.about-ach-con {
+    display: grid;
+    grid-template-columns: 40% 60%;
+    gap: 5rem;
+}
+
+.about-ach-right > p {
+    margin: 1.6rem 0 2.5rem;
+}
+
+.achievements-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(140px, auto));
+    gap: 1.5rem;
+}
+
+.ach-card {
+    background-color: #fff1da;
+    padding: 1.6rem;
+    border-radius: 1rem;
+    text-align: center;
+    color: #181e48;
+}
+
+.ach-card:hover {
+    background-color: #424890;
+    color: #fff;
+    transform: translateY(-8px);
+    box-shadow: rgba(0, 0, 0, 0.5) -4px 9px 25px -6px;
+    transition: all .42s;
+}
+
+.ach-icon {
+    background: #f75842;
+    padding: 0.6rem;
+    border-radius: 1rem;
+    display: inline-block;
+    margin-bottom: 2rem;
+    font-size: 2rem;
+    color: #fff;
+}
+
+.ach-card:nth-child(2) .ach-icon {
+    background: #00bf8e;
+}
+
+.ach-card:nth-child(3) .ach-icon {
+    background: #6c63ff;
+}
+
+.ach-card p {
+    margin-top: 1rem;
+}
+
+.about-ach-right p:nth-child(2) {
+    margin-top: 1rem;
+    color: #5E6282;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 30px;
+}
+
+.about-ach-right h1 {
+    color: #181e48;
+    font-size: 65px;
+    font-weight: 700;
+    line-height: 70px;
+    letter-spacing: -0.04em;
+    margin-bottom: 18px;
+}
+
+/* Team */
+
+.team-con {
+   display: grid;
+   grid-template-columns: repeat(auto-fit, minmax(240px, auto));
+   gap: 2rem;
+}
+
+.team-member {
+    background: #fff1da;
+    padding: 2rem;
+    border: 2px solid transparent;
+    transition: all 400ms ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.team-member:hover {
+    background: transparent;
+    border-color: #fff1da;
+}
+
+.team-mem-img img {
+    filter: saturate(0);
+}
+
+.team-member:hover img {
+    filter: saturate(1);
+}
+
+.team h2 {
+    text-align: center;
+    margin-bottom: 4rem;
+    color: #181e48;
+}
+
+.team p {
+    color: #5E6282;
+}
+
+.team-info * {
+    text-align: center;
+    margin-top: 1.4rem;
+}
+
+.team-info p {
+    color: rgba(255, 255, 255. 0.7);
+}
+
+.team-mem-social {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: -100%;
+    display: flex;
+    flex-direction: column;
+    background: #fce2b9;
+    border-radius: 1rem 0 0 1rem;
+    box-shadow: -2rem 0 2rem rgba(0, 0, 0, 0.3);
+}
+
+.team-member:hover .team-mem-social {
+    right: 0;
+}
+
+.team-mem-social a {
+    padding: 1rem;
+}
+
+/* Meadia Querys */
+
+@media (max-width: 1265px) {
+    header {
+        padding: 25px 4%;
+        transition: .3s;
+    }
+
+    .about-ach-con {
+        grid-template-columns: 1fr;
+        gap: 4rem;
+    }
+
+    .about-ach-left {
+        width: 80%;
+        margin: 0 auto;
+    }
+}
+
+@media (max-width: 440px) {
+
+    .about-ach-left {
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .achievements-cards {
+        grid-template-columns: 1fr;
+    }
+
+    .about-ach-right h1 {
+        text-align: center;
+        font-size: 40px;
+    }
+
+    .about-ach-right p:nth-child(2) {
+        text-align: center;
+    }
+}
+
+

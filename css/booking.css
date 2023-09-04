@@ -1,0 +1,126 @@
+body {
+    background-color: #f6f6f6;
+}
+
+header {
+    height: 12vh;
+}
+
+/* Location */
+
+span {
+    color: #212832;
+}
+
+.location {
+    margin-top: 10vh;
+}
+
+.main-loc {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, auto));
+    align-items: center;
+    gap: 2rem;
+
+}
+
+.loc-img img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    transition: all .42s;
+}
+
+.loc-img:hover img{
+    transform: scale(1.03);
+    filter: brightness(50%) hue-rotate(45deg);
+}
+
+.loc_box {
+    background-color: #fff;
+    padding: 30px 20px;
+    border-radius: 1rem;
+}
+
+.loc_box p {
+    color: #5E6282;
+    font-size: 12px;
+    line-height: 24px;
+}
+
+.loc {
+    padding: 5px 0;
+}
+
+.price {
+    font-size: 23px;
+}
+
+.loc_box small {
+    color: #c79f60;
+    font-size: 14px;
+}
+
+.main-text {
+    display: flex;
+    margin-top: 5rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    text-align: center;
+    color: #212832;
+}
+
+.contact-details li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+    text-align: center;
+}
+
+.contact-socials {
+    display: flex;
+}
+
+.contact-socials {
+    display: flex;
+    gap: 0.8rem;
+}
+
+.contact-socials a {
+    background-color: #424890;
+    padding: 0.5rem;
+    color: #fff;
+    border-radius: 50%;
+    font-size: 0.9rem;
+    transition: all 400ms ease;
+}
+
+.contact-socials a:hover {
+    background: transparent;
+}
+
+@media all and (max-width: 1424px) {
+    .dest-search-con {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+        width: 96%;
+    }
+
+    #dropdown-container {
+        width: 100%;
+    }
+
+    #dropdown-container:nth-child(2),#dropdown-container:nth-child(3),#dropdown-container:nth-child(4),#dropdown-container:nth-child(5) {
+        margin-left: 0;
+    }
+
+    .btn-con {
+        width: 80%;
+        height: 80px;
+    }
+}

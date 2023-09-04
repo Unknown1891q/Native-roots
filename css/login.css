@@ -1,0 +1,213 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    list-style: none;
+    border: 0;
+    outline: none;
+    text-decoration: none;
+}
+
+body {
+    height: 100vh;
+    overflow: hidden;
+    background-image: url(../img/login.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+a {
+    font-size: 12.5px;
+    font-weight: 600;
+    color: #4d6161;
+}
+
+.container {
+    background-color: #fff;
+    height: 100vh;
+    width: 50vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* border: 1px solid red; */
+}
+
+.login-text {
+    /* border: 1px solid blue; */
+    text-align: center;
+    width: 100%;
+}
+
+.login-text p {
+    margin-top: 0.5rem;
+    font-size: 16px;
+    color: #4d6161;
+}
+
+
+.title {
+    text-align: center;
+    font-size: 35px;
+    color: #173c41;
+    /* border: 1px solid red; */
+    margin: 0;
+    padding: 0;
+}
+
+.login-box {
+    /* border: 1px solid yellow; */
+    width: 50%;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* border: 5px solid green; */
+}
+
+.form-con {
+    width: 80%;
+}
+
+.radio {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin: 1.2rem 0;
+    /* border: 1px solid red; */
+}
+
+.radio div {
+    display: flex;
+}
+
+
+.radio input {
+    margin-right: 10px;
+}
+
+.radio a {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    text-align: end;
+    /* border: 1px solid red; */
+}
+
+
+.input-con {
+    margin-top: 1.5rem;
+    width: 100%;
+    /* border: 1px solid red; */
+}
+
+label {
+    color: #6a8082;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.input {
+    border: 1px solid #d4d9d7;
+    padding: 10px 20px;
+    margin-top: 10px;
+    border-radius: 0.35rem;
+    width: 100%;
+    font-size: 16px;
+    border: 2px solid #ababab;
+    transition: all .22s;
+}
+
+.input:focus {
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.btn {
+    width: 100%;
+    padding: 12px 20px;
+    border-radius: 0.4em;
+    margin: 0 0 2rem 0;
+    background-color: #f79c69;
+    color: #fff;
+    font-size: 13px;
+    font-weight: 600;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    transition: all .22s;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: #f98b4b;
+}
+
+@media (max-width: 1438px) {
+
+    .form-con {
+        width: 100%;
+    }
+
+    /* .radio {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }   
+
+    .radio a {
+        justify-content: center;
+        margin: 10px 0 0 0;
+    } */
+}
+
+@media (max-width: 1136px) {
+    .form-con {
+        width: 70%;
+    }
+
+    .container {
+        width: 100vw;
+        opacity: 0.8;
+    }
+}
+
+@media (max-width: 978px) {
+    .login-box {
+        width: 80%;
+    }
+}
+
+@media (max-width: 738px) {
+    .login-box {
+        width: 70%;
+    }
+}
+
+@media (max-width: 622px) {
+    .form-con {
+        width: 100%;
+    }
+}
+
+@media (max-width: 536px) {
+    .login-box {
+        width: 70%;
+    }
+}
+
+@media (max-width: 400px) {
+    .login-box {
+        width: 90%;
+    }
+
+    .form-con {
+        width: 100%;
+    }
+}
+
+@media (max-width: 622px) {
+    .form-con {
+        width: 100%;
+    }
+}

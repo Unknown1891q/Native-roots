@@ -1,0 +1,25 @@
+.login-box {
+    width: 80%;
+}
+
+.name {
+    display: flex;
+}
+
+.name .input-con:nth-child(2) {
+    margin-left: 1rem;
+}
+
+.btn {
+    margin-top: 1.5rem;
+}
+
+@media (max-width: 346px) {
+    .name {
+        display: block;
+    }
+
+    .name .input-con:nth-child(2) {
+        margin-left: 0;
+    }
+}
